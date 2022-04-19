@@ -5,6 +5,7 @@ import {motion} from 'framer-motion'
 import {fadeUp, routeFadeAnimation} from '../animations'
 import { GoLocation } from 'react-icons/go'
 import WorkCard from '../components/WorkCard'
+import Head from 'next/head'
 
 const Resume = () => {
 
@@ -15,6 +16,11 @@ const Resume = () => {
     animate="animate"
     exit="exit"
      className='p-4'>
+        <Head>
+        <title>
+          Resume | Mishkat
+        </title>
+      </Head>
       {/* education*/}
       <h5 className='mb-3 text-2xl font-bold text-center'>Education</h5>
       <motion.div className='grid gap-6 md:grid-cols-2' variants={fadeUp} initial="initial" animate="animate">

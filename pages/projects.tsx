@@ -5,6 +5,7 @@ import { projects as projectsDATA } from '../data'
 import { Category } from '../type'
 import {motion} from 'framer-motion'
 import { fadeUp, routeFadeAnimation, stagger } from '../animations'
+import Head from 'next/head'
 
 const Projects = () => {
   const [projects, setProjects]= useState(projectsDATA)
@@ -29,7 +30,11 @@ const Projects = () => {
     animate="animate"
     exit="exit"
     className='px-5 py-2 overflow-y-scroll' style={{height:'55vh'}}>
-
+       <Head>
+        <title>
+          Projects | Mishkat
+        </title>
+      </Head>
       <ProjectNavbar ProjectNavItemHandler={ProjectNavItemHandler} active={active}/>
 
       <motion.div 
