@@ -6,6 +6,8 @@
 body{
   background-color: black;
   font-family: sans-serif;
+  max-width: 1580px;
+  margin: auto;
 }
 ::-webkit-scrollbar-thumb{
   background-image: linear-gradient(to right bottom, #0061f2,#0dbff5 );

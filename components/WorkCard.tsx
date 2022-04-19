@@ -5,7 +5,7 @@ import { MyWork } from '../type'
 import Image from 'next/image'
 import { BsCardImage } from 'react-icons/bs'
 import {motion} from 'framer-motion'
-import { fadeUp, routeFadeAnimation, stagger } from '../animations'
+import { fadeUp, stagger } from '../animations'
 
 const WorkCard:FunctionComponent<{
     work:MyWork,
@@ -79,7 +79,7 @@ const WorkCard:FunctionComponent<{
                     <a
                      onClick={()=>window.open(certificate_path,"_blank")}
                      rel = "noopener noreferrer"
-                      className="flex w-1/2 px-4 py-2 mx-auto mt-4 space-x-3 text-lg bg-gray-300 rounded-lg cursor-pointer dark:bg-dark-200">
+                      className="flex items-center justify-center w-2/3 px-2 py-2 mx-auto my-3 space-x-2 bg-gray-300 rounded-full cursor-pointer dark:bg-dark-300">
                         <BsCardImage className='lg:w-6 lg:h-6'/>
                         <span>View Full Certificate</span>
                     </a>

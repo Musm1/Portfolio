@@ -17,7 +17,6 @@ const ProjectCard:FunctionComponent<{
         image_path,
         deployed_url ,
         github_url ,
-        category,
         tags,
         id
     },
@@ -57,7 +56,7 @@ const ProjectCard:FunctionComponent<{
                 variants={fadeUp}>
                     <Image 
                     layout='responsive' 
-                    quality={100} 
+                    quality={75} 
                     width={300} 
                     height={150} 
                     src={image_path} 
@@ -66,21 +65,21 @@ const ProjectCard:FunctionComponent<{
 
                 <motion.div
                 variants={fadeUp} 
-                className='flex justify-center my-4 space-x-3'>
-                    <a 
+                className='flex flex-wrap justify-center my-4 space-x-3 lg:flex-nowrap'>
+                    <button
                      onClick={()=>window.open(github_url,"_blank")}
-                     rel = "noopener noreferrer"
-                    className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-lg cursor-pointer dark:bg-dark-200">
+                    
+                    className="flex items-center justify-center w-2/3 px-2 py-1 mx-auto my-3 bg-gray-200 rounded-full dark:bg-dark-400">
                         <AiFillGithub/>
                         <span>Github</span>
-                    </a>
-                    <a
+                    </button>
+                    <button
                      onClick={()=>window.open(deployed_url,"_blank")}
-                     rel = "noopener noreferrer"
-                      className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-lg cursor-pointer dark:bg-dark-200">
+                    
+                      className="flex items-center justify-center w-2/3 px-2 py-1 mx-auto my-3 text-center bg-gray-200 rounded-full dark:bg-dark-400">
                         <AiFillProject/>
                         <span>Project</span>
-                    </a>
+                    </button>
                 </motion.div>
 
             </motion.div>
