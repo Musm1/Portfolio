@@ -55,7 +55,9 @@ const Resume = () => {
           <div className='my-2'>
             {
               languages.map((language)=>
-              <Bar data={language} key={language.name}/>
+              <div key={language.name}>
+              <Bar data={language} />
+              </div>
               )
             }
           </div>

@@ -4,6 +4,7 @@ import ServiceCard from '../components/ServiceCard'
 import {myservices} from '../data'
 import {motion} from 'framer-motion'
 import { fadeUp, routeFadeAnimation, stagger } from '../animations'
+import Head from 'next/head'
 
 const About = () => {
   return (
@@ -13,6 +14,11 @@ const About = () => {
     animate="animate"
     exit="exit"
     className='flex flex-col flex-grow px-6 pt-1'>
+      <Head>
+        <title>
+          Home Page
+        </title>
+      </Head>
       <h5 className='my-3 text-lg font-medium'>I'm a <b>Computer Systems Engineer</b>. Completed my BSc degree from UET Peshawar in Nov, 2019, and after that started working
       as a <b>Software/Web devleper</b> in different firms. Now looking for pursuing Masters in renowned University </h5>
 
@@ -24,6 +30,7 @@ const About = () => {
           {myservices.map((service)=>
             <motion.div
             variants={fadeUp}
+            key={service.title}
              className='bg-gray-200 rounded-lg lg:col-span-1 dark:text-white dark:bg-dark-200'>
               <ServiceCard service={service}/>
             </motion.div>
