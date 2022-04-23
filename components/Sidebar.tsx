@@ -47,7 +47,7 @@ const changeTheme=()=>{
         className='flex items-center justify-center mb-4'>
           <BsLightbulb 
           onClick={changeTheme} 
-          className='cursor-pointer w-6 h-6'/>
+          className='w-6 h-6 cursor-pointer'/>
         </div>
         <div className='flex items-center justify-center mb-2 space-x-2'>
           <GoLocation/>

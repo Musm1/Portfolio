@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useState } from 'react'
 import { MyProject } from '../type'
-import Image from 'next/image';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import {MdClose} from 'react-icons/md'
 import {motion} from 'framer-motion'
 import { fadeUp, stagger } from '../animations';
+import ImageSlide from './ImageSlide';
 
 const ProjectCard:FunctionComponent<{
     project:MyProject,
@@ -30,17 +30,7 @@ const ProjectCard:FunctionComponent<{
     variants={stagger} 
     initial="initial" 
     animate="animate">
-
-            <Image 
-            layout='responsive' 
-            quality={100} 
-            width={300} 
-            height={150} 
-            src={image_path} 
-            alt={name} 
-            className="cursor-pointer" 
-            onClick={()=>setShowDetails(id)}/>
-
+            <ImageSlide image_url={image_path} handleClick={()=>setShowDetails(id)} width={300} height={150} classImage='cursor-pointer'/>
         <p className='my-2 text-lg font-bold text-center capitalize'>{name}</p>
 
         {showDetails=== id &&
@@ -54,13 +44,7 @@ const ProjectCard:FunctionComponent<{
                 <motion.div
                 className='border-4 border-gray-100'
                 variants={fadeUp}>
-                    <Image 
-                    layout='responsive' 
-                    quality={75} 
-                    width={300} 
-                    height={150} 
-                    src={image_path} 
-                    alt={name}/>
+                    <ImageSlide image_url={image_path} width={300} height={150} classImage='cursor-pointer'/>
                 </motion.div>
 
                 <motion.div

@@ -2,10 +2,10 @@ import React, { FunctionComponent, useState } from 'react'
 import { GoLocation } from 'react-icons/go'
 import { MdClose } from 'react-icons/md'
 import { MyWork } from '../type'
-import Image from 'next/image'
 import { BsCardImage } from 'react-icons/bs'
 import {motion} from 'framer-motion'
 import { fadeUp, stagger } from '../animations'
+import ImageSlide from './ImageSlide'
 
 const WorkCard:FunctionComponent<{
     work:MyWork,
@@ -85,8 +85,8 @@ const WorkCard:FunctionComponent<{
                     </a>
 
                 </motion.div>
-                
-                    <Image src={certificate_path} width={50} height={50} layout='responsive'/>
+
+                    <ImageSlide image_url={certificate_path} width={50} height={50} />
                     <button className='absolute bg-gray-200 rounded-full right-2 top-2 focus:outline-none dark:bg-dark-200' 
                     onClick={()=>setShowdetails(false)}>
                     <MdClose className='w-6 h-6'/>

@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
 import Bar from '../components/Bar'
 import { languages, tools, works } from '../data'
 import {motion} from 'framer-motion'
 import {fadeUp, routeFadeAnimation} from '../animations'
-import { GoLocation } from 'react-icons/go'
 import WorkCard from '../components/WorkCard'
 import Head from 'next/head'
 
