@@ -20,7 +20,7 @@ const About = () => {
         </title>
       </Head>
       <h5 className='my-3 text-lg font-medium'>I'm a <b>Computer Systems Engineer</b>. Completed my BSc degree from UET Peshawar in Nov, 2019, and after that started working
-      as a <b>Software/Web devleper</b> in different firms. Now looking for pursuing Masters in <b>Computer Vision/Artificial Intelligence</b> in renowned Univerity </h5>
+      as a <b>Software/Web devleper</b> in different firms. Now looking for pursuing Masters in <b>Computer Vision/Artificial Intelligence</b> in renowned University </h5>
 
       <div className='flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-400' style={{marginLeft:'-2.5rem',marginRight:'-2.5rem', marginBottom:'-1rem'}}>
        
