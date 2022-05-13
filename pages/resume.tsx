@@ -26,14 +26,14 @@ const Resume = () => {
             <h5 className='my-2 text-xl font-bold'>Computer Systems Engineering</h5>
             <p className='font-semibold'>UET Peshawar (2015-2019)</p>
             <p className='my-3'>
-              Completed my BSc from Univeristy of Engineering & technology on Nov, 2019 with high honors.
+              Completed my BSc from Univeristy of Engineering & technology in 2019 with high honors.
             </p>
           </div>
           <div className='p-4 bg-gray-200 rounded-lg dark:bg-dark-400 dark:text-white'>
             <h5 className='my-2 text-xl font-bold'>Pre-Engineering</h5>
             <p className='font-semibold'>Qurtuba College Peshawar (2014-2015)</p>
             <p className='my-3'>
-              Completed my Pre-Engineering from Qurtuba Peshawar on April, 2015 in first division.
+              Completed my Pre-Engineering from Qurtuba Peshawar in 2015.
             </p>
           </div>
       </motion.div>

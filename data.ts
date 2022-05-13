@@ -174,8 +174,8 @@ export const works:MyWork[]=[
     {
         job_name: 'Remote Web Developer',
         comp_name: 'Auraside,Inc.',
-        comp_description: 'AuraSide, Inc. is a US-based company. We work from PC Optimizationand Settings management software to in-game cosmetics, Webdevelopment, and much more.',
-        job_description: ['Creating multiple Sites in Next/React Javascript and typescript integration.', 'Creating the front end along with the maintaing the state ofthe project.'],
+        comp_description: 'AuraSide, Inc. is a US-based company.Their work ranges from PC Optimization and Settings management software to in-game cosmetics, Web development, and much more.',
+        job_description: ['Creating multiple Sites in Next/React Javascript and typescript integration.', 'Creating the front end along with maintaining state of the project.'],
         certificate_path:'/',
         comp_contact_info: '(650) 337-0808',
         comp_contact_person: 'Stanley Day',
@@ -187,7 +187,7 @@ export const works:MyWork[]=[
         job_name: 'Front-End Developer',
         comp_name: 'Alfabolt',
         comp_description: 'A Software Development Private firm that specializes in Websites,Mobile Apps, and AI Solutions, located in NUST',
-        job_description: ['Worked on newer technologies like Next Js and typescript', 'Wrote on creating different components in storybook js'],
+        job_description: ['Worked on newer technologies like Next Js and Typescript', 'Worked on creating different components in Storybook Js'],
         certificate_path:'/images/alfaboltcert.png',
         comp_contact_info: '0324-5300625',
         comp_contact_person: 'Ali Farooq',
@@ -198,7 +198,7 @@ export const works:MyWork[]=[
     {
         job_name: 'Software Developer',
         comp_name: 'IOTICS Technology (Pvt) Ltd',
-        comp_description: 'Software development+ Web development private company, taking projects from Semi-Government Firms, Based in UET Peshawar',
+        comp_description: 'Software/Web development private company, taking projects from Semi-Government Firms, Based in UET Peshawar',
         job_description: ['Web Development (Node JS).', 'AWS (EC2/S3/RDS).', 'Database Engineering.', 'Restful APIs.'],
         certificate_path:'/images/iotics.png',
         comp_contact_info: '0334-8769383',
